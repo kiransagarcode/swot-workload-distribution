@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #B3B4BD;
+
+}
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+.wrapper h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #4070f4;
+}
+.admin_buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4070f4;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 10px;
+}
+.btn:hover {
+  background-color: transparent;
+  border-color: #4070f4;
+  color: #4070f4;
+}
+form {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+form .input-box {
+  height: 40px;
+  flex: 1;
+}
+form .input-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.input-box select:focus,
+.input-box select:valid {
+  border-color: #4070f4;
+}
+.input-box.button input {
+  width: 100%;
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4;
+  cursor: pointer;
+  padding: 10px 0;
+  border-radius: 20px;
+}
+.input-box.button input:hover {
+  background: #0e4bf1;
+}
+.status-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.status-wrapper .status-box {
+  text-align: center;
+}
+.status-wrapper .status-box p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+.status-wrapper .status-box .percent {
+  font-size: 24px;
+  font-weight: 600;
+}
+.percent-assigned {
+  color: blue;
+}
+.percent-in-progress {
+  color: rgb(252, 2, 2);
+}
+.percent-completed {
+  color: rgb(55, 238, 55);
+}
+.table-wrapper {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+table th, table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+table th {
+  background-color: #f4f4f4;
+  font-size: 16px;
+}
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+table tr:hover {
+  background-color: #f1f1f1;
+}
